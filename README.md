@@ -12,11 +12,32 @@ Department of Data Science
 
 <br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PROJECT-PBL_RESEARCH-172554" alt="Project">
-  <img src="https://img.shields.io/badge/CONFERENCE-2026_FALL-1D4ED8" alt="Conference">
-  <img src="https://img.shields.io/badge/STATUS-IN_PROGRESS-475569" alt="Status">
+
+<div align="center">
+
+<h1>DATA VISUALIZATION</h1>
+
+<h3>BIG DATA PBL — RESEARCH TEAM 06</h3>
+
+<p><strong>From Data to Insight, From Analysis to Research.</strong></p>
+
+<p>
+Duksung Women's University<br>
+Department of Data Science
 </p>
+
+<br>
+
+<p>
+<strong>BIG DATA PBL</strong> &nbsp; · &nbsp;
+<strong>2026 FALL CONFERENCE</strong> &nbsp; · &nbsp;
+<strong>IN PROGRESS</strong>
+</p>
+
+<br>
+
+</div>
+
 
 <br>
 
