@@ -12,9 +12,11 @@ Department of Data Science
 
 <br>
 
-![Project](https://img.shields.io/badge/PROJECT-BIG_DATA_PBL-172554?style=for-the-badge)
-![Conference](https://img.shields.io/badge/CONFERENCE-2026_FALL-1D4ED8?style=for-the-badge)
-![Status](https://img.shields.io/badge/STATUS-IN_PROGRESS-475569?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/PROJECT-PBL_RESEARCH-172554" alt="Project">
+  <img src="https://img.shields.io/badge/CONFERENCE-2026_FALL-1D4ED8" alt="Conference">
+  <img src="https://img.shields.io/badge/STATUS-IN_PROGRESS-475569" alt="Status">
+</p>
 
 <br>
 
