@@ -1,598 +1,258 @@
 
 <div align="center">
 
-# DATA VISUALIZATION
-### BIG DATA PBL PROJECT — TEAM 06
+# YOUR PROJECT NAME
 
-**From Data to Insight, From Analysis to Research**
+### Data Analytics & Visualization Project
 
-Duksung Women's University  
-Department of Data Science
+**Discover Patterns. Understand Data. Deliver Insights.**
 
 <br>
 
-**2026 FALL SEMESTER · ACADEMIC RESEARCH PROJECT**
+`Python` · `Data Analytics` · `Visualization` · `Research`
+
+<br>
+
+[Overview](#overview) ·
+[Features](#key-features) ·
+[Pipeline](#analysis-pipeline) ·
+[Results](#results--visualizations) ·
+[Getting Started](#getting-started)
 
 ---
-
-[PROJECT](#01--project-overview) &nbsp; | &nbsp;
-[RESEARCH](#02--research-objectives) &nbsp; | &nbsp;
-[CONFERENCE](#03--academic-conference) &nbsp; | &nbsp;
-[METHODOLOGY](#04--research-methodology) &nbsp; | &nbsp;
-[TEAM](#09--team-members)
 
 </div>
 
-<br>
+## Overview
 
-# 01 / PROJECT OVERVIEW
+### Turning complex data into actionable insights.
 
-### About This Project
+**YOUR PROJECT NAME**은 데이터 속의 주요 패턴과 관계를 분석하고, 시각화를 통해 의미 있는 인사이트를 도출하는 데이터 분석 프로젝트입니다.
 
-본 프로젝트는 덕성여자대학교 데이터사이언스학과의
-빅데이터 시각화 PBL 프로젝트입니다.
+본 프로젝트는 **[분석 주제 입력]**을 중심으로 실제 데이터를 수집·가공·분석하고, 분석 결과를 재현 가능한 코드와 시각적 결과물로 제공합니다.
 
-데이터 수집부터 전처리, 탐색적 데이터 분석(EDA),
-시각화 및 결과 해석까지의 과정을 수행하고,
-데이터 기반 연구 성과를 학술 논문으로 발전시키는 것을
-목표로 합니다.
+### The Problem
 
-<br>
+> 이 프로젝트가 해결하려는 핵심 문제를 한두 문장으로 작성합니다.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+기존 데이터에서 파악하기 어려웠던 패턴과 관계를 탐색하고, 데이터 기반으로 현상을 이해할 수 있는 분석 방법을 제시합니다.
 
-### PROJECT INFORMATION
+### Our Approach
 
-| Category | Details |
-|---|---|
-| University | Duksung Women's University |
-| Department | Data Science |
-| Course | Data Visualization for Big Data |
-| Team | Team 06 |
-| Semester | Fall 2026 |
-
-</td>
-<td width="50%" valign="top">
-
-### RESEARCH INFORMATION
-
-| Category | Details |
-|---|---|
-| Research Topic | To Be Determined |
-| Research Area | Big Data |
-| Method | Data Analysis & Visualization |
-| Research Output | Conference Paper |
-| Status | In Progress |
-
-</td>
-</tr>
-</table>
-
-<br>
+| DATA | ANALYSIS | VISUALIZATION |
+|:---|:---|:---|
+| 데이터 확보 및 품질 검증 | 통계 분석 및 패턴 탐색 | 분석 결과의 시각적 전달 |
+| Raw → Processed | Exploration → Findings | Figures → Insights |
 
 ---
 
-# 02 / RESEARCH OBJECTIVES
-
-### Research Direction
-
-본 연구는 데이터 분석 및 시각화를 통해
-의미 있는 패턴과 관계를 발견하고,
-분석 결과를 효과적으로 전달하는 데 중점을 둡니다.
-
-<br>
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 01. EXPLORE
-
-**Data Exploration**
-
-데이터의 구조와 특성을 파악하고 주요 변수 및 분석 방향을 설정합니다.
-
-</td>
-<td width="33%" valign="top">
-
-### 02. ANALYZE
-
-**Data Analysis**
-
-데이터 전처리와 탐색적 분석을 통해 주요 패턴 및 관계를 도출합니다.
-
-</td>
-<td width="33%" valign="top">
-
-### 03. VISUALIZE
-
-**Data Visualization**
-
-분석 결과를 시각적으로 표현하고 연구 인사이트를 도출합니다.
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### Research Questions
-
-> **RQ 01** — To Be Determined
->
-> **RQ 02** — To Be Determined
->
-> **RQ 03** — To Be Determined
-
-<br>
-
----
-
-# 03 / ACADEMIC CONFERENCE
-
-### 2026 Fall Academic Conference
-
-**(사)한국디지털산업학회 2026 추계학술대회**
-
-본 프로젝트는 한국디지털산업학회 추계학술대회에
-2쪽 분량의 연구 논문을 제출하고,
-심사 결과에 따라 연구 성과를 발표하는 것을 목표로 합니다.
-
-<br>
+## Key Features
 
 <table>
 <tr>
 <td width="50%" valign="top">
-
-### CONFERENCE DETAILS
-
-| Information | Details |
-|---|---|
-| Conference | 2026 추계학술대회 |
-| Organization | 한국디지털산업학회 |
-| Venue | 숙명여자대학교 |
-| Dates | 2026.12.11–12 |
-| Presentation | 2026.12.12 |
-| Paper Length | 2 Pages |
-
+<h3>01. Data Processing</h3>
+<p>원본 데이터를 분석 가능한 형태로 변환하고, 결측치·이상치 등 데이터 품질 문제를 처리합니다.</p>
 </td>
 <td width="50%" valign="top">
-
-### IMPORTANT DATES
-
-| Date | Milestone |
-|---|---|
-| **11.20** | Paper Submission |
-| 11.27 | Acceptance Notification |
-| 12.04 | Registration Deadline |
-| 12.11 | Conference Opening |
-| **12.12** | Paper Presentation |
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### Research Fields
-
-`Artificial Intelligence Transformation` ·
-`Big Data` ·
-`Data Visualization` ·
-`Digital Industry`
-
-**Submission Status:** Preparing for Submission
-
-<br>
-
----
-
-# 04 / RESEARCH METHODOLOGY
-
-### Research Workflow
-
-<table>
-<tr>
-<td align="center" width="25%">
-
-**STEP 01**
-
-Research Design
-
-<sub>연구 문제 정의</sub>
-
-</td>
-<td align="center" width="25%">
-
-**STEP 02**
-
-Data Collection
-
-<sub>데이터 수집</sub>
-
-</td>
-<td align="center" width="25%">
-
-**STEP 03**
-
-Preprocessing
-
-<sub>데이터 전처리</sub>
-
-</td>
-<td align="center" width="25%">
-
-**STEP 04**
-
-EDA
-
-<sub>탐색적 분석</sub>
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-**STEP 05**
-
-Visualization
-
-<sub>시각화</sub>
-
-</td>
-<td align="center">
-
-**STEP 06**
-
-Interpretation
-
-<sub>결과 해석</sub>
-
-</td>
-<td align="center">
-
-**STEP 07**
-
-Paper Writing
-
-<sub>논문 작성</sub>
-
-</td>
-<td align="center">
-
-**STEP 08**
-
-Presentation
-
-<sub>학술 발표</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### Methodological Framework
-
-| Phase | Process | Expected Output |
-|:---:|---|---|
-| 01 | Research Design | Research Questions |
-| 02 | Data Collection | Raw Dataset |
-| 03 | Data Preprocessing | Cleaned Dataset |
-| 04 | Exploratory Analysis | Statistical Results |
-| 05 | Data Visualization | Charts & Figures |
-| 06 | Result Interpretation | Research Findings |
-| 07 | Paper Writing | Conference Paper |
-| 08 | Presentation | Research Presentation |
-
-<br>
-
----
-
-# 05 / TECH STACK
-
-### Development Environment
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Programming & Analysis
-
-- Python
-- Pandas
-- NumPy
-
-</td>
-<td width="50%" valign="top">
-
-### Visualization
-
-- Matplotlib
-- Seaborn
-
+<h3>02. Exploratory Analysis</h3>
+<p>데이터 분포와 주요 변수의 특성을 파악하고, 변수 간 관계와 패턴을 탐색합니다.</p>
 </td>
 </tr>
 <tr>
 <td valign="top">
-
-### Development
-
-- Jupyter Notebook
-
+<h3>03. Data Visualization</h3>
+<p>다양한 시각화 기법을 활용하여 분석 결과를 이해하기 쉬운 형태로 표현합니다.</p>
 </td>
 <td valign="top">
-
-### Collaboration
-
-- Git
-- GitHub
-
+<h3>04. Insight Generation</h3>
+<p>분석 결과를 종합하여 핵심 인사이트를 도출하고 연구 결과를 문서화합니다.</p>
 </td>
 </tr>
 </table>
-
-<sub>기술 스택은 프로젝트 진행 상황에 따라 변경될 수 있습니다.</sub>
-
-<br>
 
 ---
 
-# 06 / DATA ANALYSIS & VISUALIZATION
+## Analysis Pipeline
 
-### Analysis Dashboard
+프로젝트의 데이터 처리 및 분석 흐름입니다.
 
-프로젝트의 분석 과정 및 주요 시각화 결과를
-아래 영역에 정리할 예정입니다.
+```mermaid
+flowchart LR
+    A["Raw Data"] --> B["Preprocessing"]
+    B --> C["Exploratory Analysis"]
+    C --> D["Visualization"]
+    D --> E["Insights"]
+```
 
-<br>
+### Pipeline Details
 
-<table>
-<tr>
-<td width="50%" align="center">
+| Stage | Description | Output |
+|---|---|---|
+| Data Collection | 데이터 확보 및 출처 검토 | Raw Dataset |
+| Preprocessing | 데이터 정제 및 변환 | Clean Dataset |
+| EDA | 통계적 특성 및 관계 분석 | Analysis Results |
+| Visualization | 데이터 시각화 | Figures |
+| Interpretation | 분석 결과 해석 | Key Findings |
 
-### FIGURE 01
+---
 
-**Data Distribution**
+## Results & Visualizations
 
-데이터 분포 및 기초 통계 분석
+### Analysis Results
 
-*Visualization Pending*
+실제 분석 결과와 시각화 자료를 정리하는 공간입니다.
 
-</td>
-<td width="50%" align="center">
-
-### FIGURE 02
-
-**Comparative Analysis**
-
-주요 변수 및 집단별 비교 분석
-
-*Visualization Pending*
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-### FIGURE 03
-
-**Correlation Analysis**
-
-변수 간 관계 및 상관관계 분석
-
-*Visualization Pending*
-
-</td>
-<td align="center">
-
-### FIGURE 04
-
-**Research Findings**
-
-핵심 분석 결과 및 인사이트
-
-*Visualization Pending*
-
-</td>
-</tr>
-</table>
-
-<br>
+| Analysis | Visualization |
+|---|---|
+| **01. Distribution Analysis** | 데이터 분포 및 주요 통계량 |
+| **02. Comparative Analysis** | 변수 및 집단 간 차이 |
+| **03. Relationship Analysis** | 주요 변수 간 관계 |
+| **04. Key Insights** | 핵심 결과 요약 |
 
 ### Key Findings
 
-> 분석 결과는 연구 진행 후 업데이트할 예정입니다.
+분석 완료 후 주요 결과를 다음 형식으로 정리합니다.
 
-<br>
+**Finding 01 — [핵심 발견 제목]**
+
+분석을 통해 확인한 주요 패턴과 결과를 설명합니다.
+
+**Finding 02 — [핵심 발견 제목]**
+
+데이터에 기반한 추가적인 인사이트를 설명합니다.
 
 ---
 
-# 07 / PROJECT STRUCTURE
-
-### Repository Organization
+## Project Architecture
 
 ```text
-Data-Visualization-for-Big-Data-PBL-Team-06/
+project/
 │
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb
-│   ├── 02_eda.ipynb
-│   └── 03_visualization.ipynb
+│   ├── preprocessing.ipynb
+│   ├── exploration.ipynb
+│   └── visualization.ipynb
 │
 ├── src/
+│   ├── preprocessing/
+│   ├── analysis/
+│   └── visualization/
 │
-├── visualizations/
+├── outputs/
 │   ├── figures/
-│   └── charts/
+│   └── reports/
 │
-├── paper/
-│   ├── manuscript/
-│   └── references/
+├── docs/
 │
-├── reports/
-│
+├── requirements.txt
 └── README.md
 ```
 
-*위 구조는 권장 폴더 구성으로 실제 저장소와 다를 수 있습니다.*
-
-<br>
+*위 구조는 권장 아키텍처이며, 실제 구현된 파일에 맞게 수정합니다.*
 
 ---
 
-# 08 / PROJECT ROADMAP
+## Getting Started
 
-### Research Progress
+### Requirements
 
-| Phase | Milestone | Status |
-|:---:|---|:---:|
-| 01 | Research Topic Selection | Planned |
-| 02 | Dataset Collection | Planned |
-| 03 | Data Preprocessing | Planned |
-| 04 | Exploratory Data Analysis | Planned |
-| 05 | Data Visualization | Planned |
-| 06 | Research Paper Writing | Planned |
-| 07 | Conference Submission | Planned |
-| 08 | Final Presentation | Planned |
+- Python 3.x
+- Jupyter Notebook
+- 프로젝트에서 사용하는 분석 라이브러리
 
-<br>
+### Installation
 
-### Progress Checklist
+```bash
+git clone https://github.com/ko-su-yeon/Data-Visualization-for-Big-Data-PBL-Team-06.git
 
-- [ ] Research Topic Selection
-- [ ] Research Question Definition
-- [ ] Dataset Collection
-- [ ] Data Preprocessing
-- [ ] Exploratory Data Analysis
-- [ ] Data Visualization
-- [ ] Paper Writing
-- [ ] Paper Submission
-- [ ] Presentation Preparation
+cd Data-Visualization-for-Big-Data-PBL-Team-06
+```
 
-<br>
+필요한 패키지 설치:
 
----
+```bash
+pip install -r requirements.txt
+```
 
-# 09 / TEAM MEMBERS
+`requirements.txt`는 의존성 파일이 준비된 후 사용합니다.
 
-### Research Team 06
+### Run Analysis
 
-<table>
-<tr>
-<td width="50%" align="center">
+프로젝트 노트북을 실행하여 데이터 전처리, 탐색적 분석 및 시각화 과정을 확인할 수 있습니다.
 
-### MEMBER 01
-
-**Research Planning**
-
-Project Planning & Research Design
-
-GitHub: -
-
-</td>
-<td width="50%" align="center">
-
-### MEMBER 02
-
-**Data Engineering**
-
-Data Collection & Preprocessing
-
-GitHub: -
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-### MEMBER 03
-
-**Data Analysis**
-
-Exploratory Data Analysis
-
-GitHub: -
-
-</td>
-<td align="center">
-
-### MEMBER 04
-
-**Data Visualization**
-
-Visualization & Documentation
-
-GitHub: -
-
-</td>
-</tr>
-</table>
-
-<sub>팀원 수, 이름 및 역할은 실제 팀 구성에 맞게 수정할 예정입니다.</sub>
-
-<br>
+실행 명령과 상세 사용법은 분석 코드가 완성되면 업데이트합니다.
 
 ---
 
-# 10 / RESEARCH DOCUMENTATION
+## Technology Stack
 
-### Project Deliverables
+| Category | Technologies |
+|---|---|
+| Language | Python |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Environment | Jupyter Notebook |
+| Version Control | Git, GitHub |
 
-| Document | Description | Status |
-|---|---|---|
-| Research Proposal | 연구 계획 및 문제 정의 | Planned |
-| Dataset Description | 데이터셋 설명 | Planned |
-| Analysis Notebook | 분석 코드 및 결과 | Planned |
-| Visualization Results | 시각화 결과 | Planned |
-| Conference Paper | 2쪽 학술 논문 | Planned |
-| Presentation Materials | 최종 발표 자료 | Planned |
+---
 
-<br>
+## Development Roadmap
 
-<details>
-<summary><strong>Research References</strong></summary>
+- [ ] Define the problem and research scope
+- [ ] Collect and validate datasets
+- [ ] Implement preprocessing pipeline
+- [ ] Perform exploratory data analysis
+- [ ] Develop visualizations
+- [ ] Validate findings
+- [ ] Document results
+- [ ] Prepare research publication
 
-<br>
+---
 
-연구에 활용한 논문, 데이터 출처 및 참고 문헌을 정리할 예정입니다.
+## Research & Publication
 
-</details>
+본 프로젝트는 데이터 분석 및 시각화 결과를 기반으로 학술적 연구 성과를 도출하는 것을 목표로 합니다.
 
-<br>
+### Target Conference
 
-<details>
-<summary><strong>Additional Project Notes</strong></summary>
+**(사)한국디지털산업학회 2026 추계학술대회**
 
-<br>
+| Item | Details |
+|---|---|
+| Conference | 2026 Fall Academic Conference |
+| Venue | Sookmyung Women's University |
+| Conference Dates | December 11–12, 2026 |
+| Paper Submission | November 20, 2026 |
+| Paper Length | 2 Pages |
+| Research Area | Big Data, Data Visualization |
+| Status | Preparing for Submission |
 
-프로젝트 회의 기록, 분석 과정 및 추가 연구 내용을 정리할 예정입니다.
+논문 채택 및 발표 여부는 심사 결과에 따라 확정됩니다.
 
-</details>
+---
 
-<br>
+## Contributors
+
+**Team 06**
+
+Duksung Women's University  
+Department of Data Science
+
+프로젝트 참여자 및 기여 내역은 추후 업데이트합니다.
 
 ---
 
 <div align="center">
 
-### DATA VISUALIZATION
+**YOUR PROJECT NAME**
 
-**BIG DATA PBL — RESEARCH TEAM 06**
+Data Analytics · Visualization · Research
 
-Duksung Women's University  
-Department of Data Science
-
-<br>
-
-**2026 FALL ACADEMIC RESEARCH PROJECT**
-
-<sub>From Data to Insight, From Analysis to Research.</sub>
+<sub>Built by Team 06 · 2026</sub>
 
 </div>
