@@ -1,350 +1,247 @@
 <div align="center">
 
-# GLP-1 Safety Analytics
+# GLP-1 계열 의약품 이상사례 분석
 
-### Adverse Event Reporting Patterns & Seriousness Prediction
+### 신고 패턴 분석 및 머신러닝 기반 중대 신고 여부 예측
 
-**Exploring Drug Safety Reports Through Statistics, Visualization and Machine Learning**
+**GLP-1 Safety Analytics**
 
-<br>
-
-`PHARMACOVIGILANCE` · `STATISTICAL ANALYSIS` · `INTERACTIVE VISUALIZATION` · `MACHINE LEARNING`
-
-<br>
-
-**2026 RESEARCH PROJECT | TEAM 06**
+`통계 분석` · `탐색적 데이터 분석` · `인터랙티브 시각화` · `머신러닝`
 
 ---
-
-[Overview](#overview) ·
-[Research](#research-objectives) ·
-[Dataset](#dataset) ·
-[Pipeline](#analysis-pipeline) ·
-[Visualization](#visual-analytics) ·
-[Prediction](#machine-learning) ·
-[Conference](#research--publication)
 
 </div>
 
-<br>
+## 프로젝트 개요
 
-## Overview
+- **연구 주제:** GLP-1 계열 의약품의 이상사례 보고 패턴 분석 및 머신러닝 기반 중대 신고 여부 예측
+- **연구 목적:** 의약품별 이상사례 신고 특성 파악 및 중대 신고 여부 예측
+- **연구 방향:** 통계 분석 및 탐색적 데이터 분석(EDA) 중심
+- **확장 요소:** 인터랙티브 데이터 시각화 및 머신러닝 기반 예측 모델
+- **활용 데이터:** Kaggle GLP-1 계열 의약품 이상사례 데이터
 
-### Understanding GLP-1 Adverse Event Reporting Patterns
+### 핵심 연구 영역
 
-**GLP-1 Safety Analytics**는 GLP-1 계열 의약품의 이상사례 보고 데이터를 분석하여 의약품별·시계열별 신고 패턴을 탐색하고, 중대 신고 여부를 예측하는 데이터사이언스 연구 프로젝트입니다.
-
-통계 분석과 탐색적 데이터 분석(EDA)을 핵심 연구 방법으로 활용하며, 인터랙티브 데이터 시각화 및 머신러닝 기반 이진 분류 모델을 결합합니다.
-
-### Research Focus
-
-<table>
-<tr>
-<td width="33%" align="center">
-<h3>01 / EXPLORE</h3>
-<b>Statistical Analysis</b>
-<p>의약품별 이상사례 보고 분포와 시간적 변화 탐색</p>
-</td>
-<td width="33%" align="center">
-<h3>02 / VISUALIZE</h3>
-<b>Interactive Analytics</b>
-<p>분석 결과를 탐색할 수 있는 시각화 및 대시보드</p>
-</td>
-<td width="33%" align="center">
-<h3>03 / PREDICT</h3>
-<b>Machine Learning</b>
-<p>보고 특성을 활용한 중대 신고 여부 예측</p>
-</td>
-</tr>
-</table>
-
-> **Research Scope**
->
-> 본 프로젝트는 자발적 이상사례 보고 데이터의 특성과 신고 패턴을 분석합니다. 보고 건수나 예측 결과를 의약품의 실제 부작용 발생률 또는 인과관계로 해석하지 않습니다.
-
----
-
-## Research Objectives
-
-### Core Research Questions
-
-| ID | Research Question |
-|:---:|---|
-| RQ1 | GLP-1 계열 의약품별 이상사례 신고 분포에는 어떤 차이가 나타나는가? |
-| RQ2 | 시간에 따라 이상사례 보고량과 중대 신고 비율은 어떻게 변화하는가? |
-| RQ3 | 주요 보고 특성에 따라 중대 신고 비율에 어떤 차이가 나타나는가? |
-| RQ4 | 데이터 누수를 통제한 머신러닝 모델로 중대 신고 여부를 어느 정도 예측할 수 있는가? |
-
-### Analytical Approach
-
-| Research Component | Method |
+| 영역 | 주요 내용 |
 |---|---|
-| Descriptive Statistics | 빈도, 비율, 분포 분석 |
-| Comparative Analysis | 의약품 및 보고 특성별 비교 |
-| Temporal Analysis | 연도별·월별 신고 추세 |
-| Visual Analytics | 인터랙티브 차트 및 대시보드 |
-| Predictive Modeling | 중대 신고 여부 이진 분류 |
-| Model Evaluation | ROC-AUC, PR-AUC, F1, Recall 등 |
+| 통계 분석 | 신고 건수, 구성비, 중대 신고 비율 분석 |
+| 의약품별 분석 | 의약품별 신고 분포 및 특성 비교 |
+| 시계열 분석 | 연도별·월별 신고 추세 분석 |
+| 데이터 시각화 | 주요 분석 결과 시각화 및 대시보드 구성 |
+| 머신러닝 | 중대 신고 여부 예측 및 모델 성능 평가 |
+
+> **분석 범위**
+> - 이상사례 신고 데이터의 통계적 패턴 분석
+> - 실제 부작용 발생률 및 의약품 간 위험도 비교와 구분
+> - 신고 데이터만으로 의약품과 이상사례의 인과관계 판단 불가
 
 ---
 
-## Dataset
+## 01. 데이터 및 전처리
 
-### Data Source
+### 데이터 정보
 
-**Kaggle — GLP-1 Adverse Event Reports**
-
-| Attribute | Description |
+| 항목 | 내용 |
 |---|---|
-| Dataset | GLP-1 계열 의약품 이상사례 데이터 |
-| Source | Kaggle |
-| Original File | `adverse_events.csv` |
-| Domain | Pharmacovigilance |
-| Analysis Unit | 이상사례 신고 기록 |
-| Target | 중대 신고 여부 (Binary Classification) |
+| 출처 | Kaggle |
+| 데이터 | GLP-1 계열 의약품 이상사례 보고 데이터 |
+| 원본 파일 | `adverse_events.csv` |
+| 분석 대상 | GLP-1 계열 의약품 이상사례 신고 기록 |
+| 예측 목표 | 중대 신고 여부 |
 
-### Data Quality & Preprocessing
+### 전처리 항목
 
-분석 전 데이터 품질을 검토하고, 일관된 신고 단위와 분석 기준을 확보합니다.
-
-- 중복 신고 ID 및 동일 신고의 반복 기록 검토
-- 주요 변수의 결측치 및 비정상 값 확인
-- 신고 날짜의 유효성 및 분석 기간 검증
-- 중대 신고 여부 라벨의 정의 및 충돌 검토
-- 예측 모델에 사용되는 변수의 데이터 누수 검토
-
-> 중대 신고 여부는 데이터에서 정의한 기준에 따라 생성하며, 결과를 직접 결정하는 변수는 예측 입력에서 제외합니다.
+- 중복 신고 ID 및 반복 기록 검토
+- 결측치 및 비정상 값 확인
+- 신고 날짜 유효성 검증
+- 중대 신고 여부 라벨 생성 및 충돌 검토
+- 데이터 누수 가능 변수 확인
+- 전처리 진단 결과 별도 관리
 
 ---
 
-## Analysis Pipeline
+## 02. 탐색적 데이터 분석
+
+### A. 의약품별·시계열 분석
+
+- 의약품별 이상사례 신고 건수 및 구성비
+- 의약품별 중대 신고 비율
+- 연도별·월별 신고 건수 변화
+- 의약품별 시계열 신고 패턴 비교
+
+### B. 신고 특성 및 중대 신고 분석
+
+- 중대·비중대 신고 분포
+- 주요 신고 특성별 분포 비교
+- 신고 특성과 중대 신고 여부 간 관계
+- 클래스 불균형 및 주요 통계적 특성
+
+---
+
+## 03. 데이터 시각화
+
+### 시각화 구성
+
+| 시각화 항목 | 주요 내용 |
+|---|---|
+| 의약품별 신고 분포 | 의약품별 신고 건수 비교 |
+| 시계열 추세 | 연도별·월별 신고량 변화 |
+| 중대 신고 비율 | 의약품별 중대 신고 비율 비교 |
+| 인터랙티브 대시보드 | 의약품·기간·중대 여부별 필터링 |
+
+### 주요 시각화 결과
+
+**그림 1. 의약품별 이상사례 신고 분포**
+
+- 의약품별 신고 건수 및 구성비 비교
+- 시각화 이미지 추가 예정
+
+**그림 2. 연도별·월별 신고 추세**
+
+- 기간별 신고 건수 변화
+- 시각화 이미지 추가 예정
+
+**그림 3. 의약품별 중대 신고 비율**
+
+- 의약품별 중대 신고 비율 비교
+- 시각화 이미지 추가 예정
+
+---
+
+## 04. 머신러닝 기반 예측
+
+### 예측 모델 구성
+
+| 항목 | 내용 |
+|---|---|
+| 예측 목표 | 중대 신고 여부 |
+| 문제 유형 | 이진 분류 |
+| 비교 모델 | 로지스틱 회귀, 랜덤 포레스트 등 |
+| 평가 지표 | ROC-AUC, AP, F1-score, Recall |
+| 주요 검증 사항 | 데이터 누수, 중복 신고, 클래스 불균형 |
+
+### 모델링 고려사항
+
+- 중대 신고 라벨을 직접 결정하는 변수 제외
+- 동일 신고의 학습·평가 데이터 간 중복 방지
+- 클래스 불균형을 고려한 모델 성능 평가
+- 예측 성능 및 주요 변수 중요도 분석
+- 실제 부작용 위험도와 예측 결과의 구분
+
+---
+
+## 05. 분석 파이프라인
 
 ```mermaid
 flowchart TD
-    A["Kaggle Adverse Event Data"] --> B["Data Quality Validation"]
-    B --> C["Preprocessing"]
-    C --> D["Exploratory Data Analysis"]
-    D --> E["Statistical Findings"]
-    D --> F["Interactive Visualization"]
-    C --> G["Leakage-Safe Feature Engineering"]
-    G --> H["Machine Learning"]
-    H --> I["Model Evaluation"]
-    E --> J["Research Results"]
-    F --> J
-    I --> J
+    A["데이터 수집"] --> B["데이터 품질 검증"]
+    B --> C["데이터 전처리"]
+    C --> D["탐색적 데이터 분석"]
+    D --> E["통계 분석 및 시각화"]
+    C --> F["머신러닝 기반 예측"]
+    E --> G["연구 결과 도출"]
+    F --> G
 ```
 
-### Workflow
+### 사용 기술
 
-| Stage | Description | Deliverable |
-|:---:|---|---|
-| 01 | Data Validation | Quality Diagnostics |
-| 02 | Data Preprocessing | Analysis-Ready Dataset |
-| 03 | Statistical EDA | Descriptive Statistics |
-| 04 | Temporal & Drug Analysis | Comparative Figures |
-| 05 | Interactive Visualization | Visual Dashboard |
-| 06 | Predictive Modeling | Classification Models |
-| 07 | Research Interpretation | Paper & Findings |
-
----
-
-## Exploratory Data Analysis
-
-### A. Drug-Specific & Temporal Analysis
-
-의약품별 이상사례 신고 특성과 시간에 따른 보고 패턴을 분석합니다.
-
-**Analysis Topics**
-
-- GLP-1 의약품별 신고 건수 및 구성비
-- 의약품별 중대 신고 비율 비교
-- 연도별·월별 이상사례 신고 추세
-- 시간에 따른 의약품별 신고 패턴 변화
-
-### B. Report Characteristics & Seriousness Analysis
-
-신고 특성에 따른 분포와 중대 신고 여부의 관계를 탐색합니다.
-
-**Analysis Topics**
-
-- 신고 특성별 분포 비교
-- 중대 신고와 비중대 신고의 특성 비교
-- 주요 변수와 중대 신고 여부 간 관계 탐색
-- 데이터 불균형 및 분석상 한계 검토
-
----
-
-## Visual Analytics
-
-### Interactive Data Exploration
-
-정적 통계 그래프를 넘어 사용자가 조건을 선택하여 신고 패턴을 탐색할 수 있는 시각화 환경을 목표로 합니다.
-
-| Component | Function |
+| 구분 | 기술 |
 |---|---|
-| Drug Filter | 의약품별 데이터 탐색 |
-| Time Filter | 분석 기간 선택 |
-| Seriousness Filter | 중대·비중대 신고 비교 |
-| Trend Analysis | 시계열 신고 패턴 |
-| Comparative View | 의약품별 특성 비교 |
-
-### Visualization Gallery
-
-| FIGURE 01 | FIGURE 02 |
-|:---:|:---:|
-| **Drug-Specific Reporting Patterns** | **Temporal Reporting Trends** |
-| 의약품별 신고 분포 | 연도별·월별 신고 변화 |
-| Figure to be added | Figure to be added |
-
-| FIGURE 03 | FIGURE 04 |
-|:---:|:---:|
-| **Serious Reporting Ratio** | **Predictive Model Evaluation** |
-| 의약품별 중대 신고 비율 | 모델 성능 비교 |
-| Figure to be added | Figure to be added |
-
-*실제 시각화 결과가 준비되면 그래프 이미지 및 대시보드 링크로 교체합니다.*
+| 프로그래밍 | Python |
+| 데이터 처리 | Pandas, NumPy |
+| 통계 분석 | SciPy |
+| 시각화 | Matplotlib, Seaborn, Plotly |
+| 머신러닝 | Scikit-learn |
+| 개발 환경 | Google Colab |
+| 버전 관리 | GitHub |
 
 ---
 
-## Machine Learning
-
-### Seriousness Classification
-
-이상사례 신고 기록의 특성을 기반으로 중대 신고 여부를 예측하는 이진 분류 문제를 다룹니다.
-
-**Prediction Target**
+## 06. 프로젝트 구조
 
 ```text
-0 = Non-serious Report
-1 = Serious Report
-```
-
-### Modeling Strategy
-
-| Component | Description |
-|---|---|
-| Task | Binary Classification |
-| Baseline | Logistic Regression |
-| Candidate Model | Random Forest |
-| Validation | 데이터 누수와 중복 신고를 고려한 분할 |
-| Evaluation | ROC-AUC, Average Precision, F1, Recall |
-| Interpretation | 주요 예측 변수 및 모델 오류 분석 |
-
-*모델 구성과 성능 수치는 실험 완료 후 확정합니다.*
-
-### Important Considerations
-
-- 중대 신고 여부를 직접 정의하는 변수의 입력 사용 금지
-- 동일 신고의 학습·평가 데이터 간 중복 방지
-- 클래스 불균형을 고려한 성능 평가
-- 예측 결과와 의학적 인과관계의 구분
-
----
-
-## Project Structure
-
-아래는 프로젝트의 권장 저장소 구조입니다.
-
-```text
-GLP1-Safety-Analytics/
+Data-Visualization-for-Big-Data-PBL-Team-06/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── raw/                  # 원본 데이터
+│   └── processed/            # 전처리 데이터
 │
 ├── notebooks/
-│   ├── preprocessing/
-│   ├── eda/
-│   │   ├── eda_a_drug_temporal.ipynb
-│   │   └── eda_b_report_seriousness.ipynb
-│   └── modeling/
+│   ├── preprocessing/        # 전처리 코드
+│   ├── eda/                  # 탐색적 데이터 분석
+│   └── modeling/             # 머신러닝 실험
 │
-├── src/
-│   ├── preprocessing/
-│   ├── visualization/
-│   └── modeling/
+├── visualization/            # 시각화 코드
 │
-├── dashboard/
+├── dashboard/                # 인터랙티브 대시보드
 │
-├── outputs/
-│   ├── figures/
-│   └── tables/
+├── results/
+│   ├── figures/              # 분석 그래프
+│   └── tables/               # 분석 결과표
 │
-├── paper/
+├── paper/                    # 학술대회 논문
 │
-├── requirements.txt
 └── README.md
 ```
 
-*표시된 폴더와 파일은 권장 구조이며 실제 저장소에 생성된 파일과 다를 수 있습니다.*
+*권장 디렉터리 구조이며, 실제 저장소 구성에 따라 변경 가능*
 
 ---
 
-## Technology Stack
+## 07. 연구 진행 현황
 
-| Category | Technologies |
+| 단계 | 내용 | 상태 |
+|---|---|---|
+| 01 | 데이터 수집 | 완료 |
+| 02 | 데이터 전처리 | 완료 |
+| 03 | 탐색적 데이터 분석 A | 완료 |
+| 04 | 탐색적 데이터 분석 B | 완료 |
+| 05 | 데이터 시각화 | 진행 중 |
+| 06 | 머신러닝 모델링 | 진행 예정 |
+| 07 | 학술대회 논문 작성 | 진행 예정 |
+
+---
+
+## 08. 학술대회 및 연구 성과
+
+### 한국디지털산업학회 2026 추계학술대회
+
+| 항목 | 내용 |
 |---|---|
-| Language | Python |
-| Data Processing | Pandas, NumPy |
-| Statistical Analysis | SciPy, Statsmodels |
-| Visualization | Matplotlib, Seaborn, Plotly |
-| Machine Learning | Scikit-learn |
-| Environment | Google Colab, Jupyter Notebook |
-| Collaboration | Git, GitHub |
+| 논문 제출 마감 | 2026.11.20 |
+| 발표 여부 통보 | 2026.11.27 |
+| 사전등록 마감 | 2026.12.04 |
+| 학술대회 일정 | 2026.12.11 ~ 12.12 |
+| 발표 예정일 | 2026.12.12 |
+| 장소 | 숙명여자대학교 |
+| 논문 분량 | 2쪽 |
+| 현재 상태 | 논문 제출 준비 중 |
 
-*실제 사용한 라이브러리에 맞춰 업데이트합니다.*
+### 연구 결과물
 
----
-
-## Research & Publication
-
-### Target Conference
-
-**(사)한국디지털산업학회 2026 추계학술대회**
-
-| Item | Details |
-|---|---|
-| Conference Dates | December 11–12, 2026 |
-| Presentation Date | December 12, 2026 |
-| Venue | Sookmyung Women's University |
-| Paper Length | 2 Pages |
-| Submission Deadline | November 20, 2026 |
-| Acceptance Notification | November 27, 2026 |
-| Registration Deadline | December 4, 2026 |
-| Research Fields | Big Data, Data Visualization, AX |
-
-**Status: Preparing for Submission**
-
-논문 채택 및 발표 여부는 학술대회 심사 결과에 따라 확정됩니다.
+- 데이터 전처리 및 품질 검증 결과
+- 의약품별·시계열 탐색적 데이터 분석 결과
+- 주요 통계 그래프 및 인터랙티브 시각화
+- 머신러닝 기반 중대 신고 예측 모델
+- 학술대회 제출 논문
 
 ---
 
-## Project Team
+## 연구팀
 
-**Team 06 — Duksung Women's University**
-
-Department of Data Science
-
-본 프로젝트는 데이터 분석, 시각화 및 머신러닝 기반 예측 연구를 공동 수행합니다.
-
----
-
-## Research Limitations
-
-자발적 이상사례 보고 데이터에는 과소보고, 선택적 보고, 중복 신고 및 보고 시점의 차이 등이 존재할 수 있습니다.
-
-따라서 본 프로젝트의 분석 결과는 신고 데이터 내부의 패턴을 설명하는 데 초점을 두며, 의약품 간 실제 안전성 우열이나 부작용 발생 위험을 직접 비교하는 근거로 사용하지 않습니다.
+- **소속:** 덕성여자대학교 데이터사이언스학과
+- **팀명:** Team 06
+- **연구 형태:** 2인 공동 연구
+- **연구 분야:** 빅데이터 분석 · 데이터 시각화 · 머신러닝
 
 ---
 
 <div align="center">
 
-### GLP-1 Safety Analytics
+**GLP-1 Safety Analytics**
 
-**Statistical Exploration · Interactive Visualization · Predictive Modeling**
+GLP-1 계열 의약품 이상사례 보고 패턴 분석 및 예측
 
-Data-Driven Pharmacovigilance Research
-
-<sub>Research Team 06 · 2026</sub>
+<sub>2026 · Team 06</sub>
 
 </div>
