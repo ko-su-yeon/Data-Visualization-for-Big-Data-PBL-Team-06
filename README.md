@@ -95,3 +95,7 @@ A와 B 모두 검증에서 로지스틱 회귀가 선정됐다. 같은 시험 �
 1. Google Colab에서 `GLP1_PBL_All_in_One.ipynb`를 열고 CPU 런타임을 선택한다.
 2. **런타임 → 모두 실행**을 누르고 파일 선택 창에 원본 엑셀을 올린다. 이미 업로드했다면 첫 설정 셀의 `INPUT_PATH`에 실제 파일 경로를 입력한다.
 3. 전처리 결과에서 고유 신고 54,170건과 중대 신고 15,502건을 확인한 뒤, 노트북의 EDA·모델 평가 셀에서 표와 그림을 확인한다.
+
+## 참고자료 및 출처
+
+- sumedh1507, [GLP-1 Weight Loss Drugs Insights](https://www.kaggle.com/code/sumedh1507/glp-1-weight-loss-drugs-insights), Kaggle 공개 분석 노트북.
