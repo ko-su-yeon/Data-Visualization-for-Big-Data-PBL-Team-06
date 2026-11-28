@@ -98,4 +98,4 @@ A와 B 모두 검증에서 로지스틱 회귀가 선정됐다. 같은 시험 �
 
 ## 참고자료 및 출처
 
-- sumedh1507, [GLP-1 Weight Loss Drugs Insights](https://www.kaggle.com/code/sumedh1507/glp-1-weight-loss-drugs-insights), Kaggle 공개 분석 노트북.
+- sumedh1507, “[GLP-1 Weight Loss Drugs Insights](https://www.kaggle.com/code/sumedh1507/glp-1-weight-loss-drugs-insights),” Kaggle.
